@@ -1,0 +1,30 @@
+{
+  "name": "exip-contracts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "flatten:EXIPTOKEN": "npx hardhat flatten contracts/EXIPTOKEN.sol > flattenedContracts/EXIPTOKEN.sol",
+    "flatten:EXIPTLD": "npx hardhat flatten contracts/EXIPTLD.sol > flattenedContracts/EXIPTLD.sol",
+    "flatten:EXIPDOMAIN": "npx hardhat flatten contracts/EXIPDOMAIN.sol > flattenedContracts/EXIPDOMAIN.sol",
+    "flatten:TIMELOCK": "npx hardhat flatten contracts/TIMELOCK.sol > flattenedContracts/TIMELOCK.sol"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/exipdeveloper01/exip-contracts.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/exipdeveloper01/exip-contracts/issues"
+  },
+  "homepage": "https://github.com/exipdeveloper01/exip-contracts#readme",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.4.1",
+    "@poanet/solidity-flattener": "^3.0.6",
+    "truffle-flattener": "^1.5.0"
+  },
+  "devDependencies": {
+    "hardhat": "^2.2.1"
+  }
+}
